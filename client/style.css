@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  grid-template-rows: repeat(5, 50px);
+  gap: 1px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.cell:nth-child(odd) {
+  background-color: #eee;
+}
+
+.cell.selected {
+  background-color: #f0f;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+#move-history {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#character-selection {
+  margin: 20px auto;
+  text-align: center;
+}
+
+#character-selection button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.5em;
+}
+
+.cell.selected {
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+}
+
+.player-A {
+  color: blue;
+}
+
+.player-B {
+  color: red;
+}

@@ -1,0 +1,14 @@
+{
+    "name": "hitwicket-game-server",
+    "version": "1.0.0",
+    "description": "Server for the turn-based chess-like game.",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2",
+      "ws": "^8.10.0"
+    }
+  }
+  
